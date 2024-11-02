@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background:#f9f3e6;
+    --secondary-color: #FFEB3B;
+    --accent-color: #3a005f;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --margin-bottom: 12px;
+}
+
+.container {
+    display: flex;
+    border: 1px solid black;
+    height: 32rem;
+    width: 56%;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 8px;
+    background-color: var(--background);
+}
+
+.sidebar {
+    width: 23%;
+    padding: 1rem;
+    border: 1px dotted black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.images-container {
+    height: 230px;
+    overflow-y: auto;
+    border: 1px solid #dddddd;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.images img {
+    height: 96px;
+    width: 62px;
+    border: 1px solid var(--black-color);
+    cursor: grab;
+}
+
+.tshirt {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+}
+
+.tshirt-black {
+    max-width: 90%;
+    height: auto;
+    margin: 1rem 0;
+    filter: drop-shadow(12px 12px 15px var(--black-color));
+}
+
+.tshirt-white {
+    max-height: 80%;
+    max-width: 90%;
+    height: auto;
+    margin: 1rem 0;
+    filter: drop-shadow(12px 12px 15px var(--black-color));
+}
+
+.title {
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.character {
+    position: absolute;
+    bottom: 18%;
+    font-size: 1.2rem;
+    color: black; 
+}
+
+.tshirt > h2 {
+    bottom: 1.5rem;
+    position: absolute;
+    color: black; 
+}
+
+.agent {
+    position: absolute;
+    right: 16rem;
+    bottom: 7rem;
+    width: 7.5rem;
+    transform: scaleX(-1);
+}
+
+.agent-small {
+    right: 13rem;
+    position: absolute;
+    width: 3rem;
+    z-index: 2;
+    top: 8rem;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+        height: 38rem;
+        margin-top: 0rem;
+        padding: 1rem;
+    }
+
+    .sidebar {
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        margin-top: -1rem;
+        flex-direction: column;
+        height: 20rem;
+    }
+
+    .images-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 180px;
+        width: 9.5rem;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .tshirt {
+        width: 100%;
+    }
+
+    .tshirt-white {
+        top: 0rem;
+        position: absolute;
+        max-height: 14rem;
+        filter: drop-shadow(5px 5px 10px var(--black-color));
+    }
+
+    .title {
+        font-size: 1rem;
+        position: relative;
+        top: 2rem;
+        left: -2rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .agent {
+        width: 4rem;
+        position: relative;
+        right: 0;
+        bottom: 0px;
+        top: 3rem;
+        transform: none;
+        margin: auto;
+    }
+
+    .agent-small{
+        right: 10.5rem;
+        position: absolute;
+        width: 2rem;
+        z-index: 2;
+        top: 2.5rem;
+    }
+
+    .tshirt > h2{
+        top: 15rem;
+        position: absolute;
+        color: black;
+    }
+
+    .character{
+        font-size: 1rem;
+        position: relative;
+        top: 3.5rem;
+        left: 0;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .tshirt-black{
+        top: -3rem;
+        position: absolute;
+        max-width: 68%;
+        filter: drop-shadow(5px 5px 10px var(--black-color));
+    }
+    
+}

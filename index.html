@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset=UTF-8>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel=stylesheet href=./src/css/style.css>
+    <script type=module src=./src/js/script.js defer></script>
+	<title>Tarea4_Customizer</title>
+</head>
+<body>
+	<div class="container">
+            <div class="sidebar">
+                <label for="title">Title:</label>
+                <input type="text" id="titleInput" name="title" maxlength="10">
+                <input type="range" id="rangeHorizontal" name="satisfaction">
+                <input type="range" id="rangeVertical" name="satisfaction"><br>
+                <div>
+                    <input type="radio" id="black" name="color" value="black" checked>
+                    <label for="black">Black</label>
+                </div>  
+                <div>
+                    <input type="radio" id="white" name="color" value="white">
+                    <label for="white">White</label><br>
+                </div>
+                <label>Images (drag to t-shirt):</label>
+                
+                <!-- Contenedor para el scroll -->
+                <div class="images-container">
+                    <div class="images">
+                        <img src="src/images/astra.png" alt="Astra">
+                        <img src="src/images/chamber.png" alt="Chamber">
+                        <img src="src/images/fade.png" alt="Fade">
+                        <img src="src/images/harbor.png" alt="Harbor">
+                        <img src="src/images/jett.png" alt="Jett">
+                        <img src="src/images/kayo.png" alt="Kayo">
+                        <img src="src/images/neon.png" alt="Neon">
+                        <img src="src/images/raze.png" alt="Raze">
+                        <img src="src/images/skye.png" alt="Skye">
+                        <img src="src/images/sova.png" alt="Sova">
+                        <img src="src/images/sypher.png" alt="Sypher">
+                    </div>
+                </div>
+            </div>
+            <div class="tshirt">
+                <div class="title">Title</div>
+                <img class="agent-small" src="src/images/astra.png" alt="Astra">
+                <img class="tshirt-black" src="src/images/camiseta-negra.png" alt="Camiseta Negra" class="tshirt-image" draggable="false">
+                <img class="tshirt-white" src="src/images/camiseta-blanca.png" alt="Camiseta Blanca" class="tshirt-image" style="display: none;" draggable="false">
+                <img class="agent" src="src/images/astra.png" alt="Astra">
+                <div class="character">CHARACTER</div>
+                <h2>Custom your T-shirt</h2>
+            </div>
+    </div>
+    
+    
+</body>
+</html>
+
