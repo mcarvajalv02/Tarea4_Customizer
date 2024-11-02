@@ -173,6 +173,7 @@
         top: 3rem;
         transform: none;
         margin: auto;
+        transform: scaleX(-1);
     }
 
     .agent-small{
